@@ -436,7 +436,7 @@ You can construct a matrix in R with the matrix() function.
   
 
   
-In the matrix() function:
+# In the matrix() function:
   The first argument is the collection of elements that R will arrange into the rows and columns of the matrix. Here, we use 1:9 which is a shortcut for c(1, 2, 3, 4, 5, 6, 7, 8, 9).
   The argument byrow indicates that the matrix is filled by the rows. If we want the matrix to be filled by the columns, we just place byrow = FALSE.
   The third argument nrow indicates that the matrix should have three rows.
@@ -445,13 +445,16 @@ In the matrix() function:
   
   # matrix(1:9, byrow = TRUE, nrow = 3)
   
-"Example
+                                                              
+                                                              
+                                                              
+# Example #
   
   Use c(new_hope, empire_strikes, return_jedi) to combine the three vectors into one vector. Call this vector box_office.
   Construct a matrix with 3 rows, where each row represents a movie. Use the matrix() function to do this. 
   The first argument is the vector box_office, containing all box office figures. 
   Next, you will have to specify nrow = 3 and byrow = TRUE. 
-  Name the resulting matrix star_wars_matrix."
+  Name the resulting matrix star_wars_matrix.
 
   
 #Box office Star Wars (in millions)
@@ -470,19 +473,20 @@ In the matrix() function:
   
   
   
-  "Naming a matrix
+  # Naming a matrix #
   
   rownames(my_matrix) <- row_names_vector
   colnames(my_matrix) <- col_names_vector
 
   We went ahead and prepared two vectors for you: region, and titles. 
-  You will need these vectors to name the columns and rows of star_wars_matrix, respectively."
+  You will need these vectors to name the columns and rows of star_wars_matrix, respectively.
 
   
-  "Example
+                                                              
+# Example # 
   Use colnames() to name the columns of star_wars_matrix with the region vector. 
   Use rownames() to name the rows of star_wars_matrix with the titles vector.
-  Print out star_wars_matrix to see the result of your work."
+  Print out star_wars_matrix to see the result of your work.
   
   # Box office Star Wars (in millions!)
   new_hope <- c(460.998, 314.4)
@@ -544,7 +548,7 @@ In the matrix() function:
       
       
 
-  "# Selection of matrix elements #
+  # Selection of matrix elements #
       
       Similar to vectors, you can use the square brackets [ ] to select one or multiple elements from a matrix. 
       Whereas vectors have one dimension, matrices have two dimensions. You should therefore use a comma to separate the rows you want to select from the columns. For example:
@@ -585,16 +589,16 @@ In the matrix() function:
       
     
       
-" # A little arithmetic with matrices #
+ # A little arithmetic with matrices #
         
     Similar to what you have learned with vectors, the standard operators like +, -, /, *, etc. work in an element-wise way on matrices in R.
     For example, 2 * my_matrix multiplies each element of my_matrix by two.
-    As a newly-hired data analyst for Lucasfilm, it is your job to find out how many visitors went to each movie for each geographical area. You already have the total revenue figures in all_wars_matrix. Assume that the price of a ticket was 5 dollars. Simply dividing the box office numbers by this ticket price gives you the number of visitors." 
+    As a newly-hired data analyst for Lucasfilm, it is your job to find out how many visitors went to each movie for each geographical area. You already have the total revenue figures in all_wars_matrix. Assume that the price of a ticket was 5 dollars. Simply dividing the box office numbers by this ticket price gives you the number of visitors. 
       
       
-  "  #Example
+   #Example
       Divide all_wars_matrix by 5, giving you the number of visitors in millions. 
-      Assign the resulting matrix to visitors. "
+      Assign the resulting matrix to visitors. 
 
       all_wars_matrix
       visitors <- all_wars_matrix / 5
